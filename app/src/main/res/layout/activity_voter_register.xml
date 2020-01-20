@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VoterRegister"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registration Form"
+                android:gravity="center"
+                android:textSize="30dp"/>
+            <EditText
+                android:id="@+id/voterId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter voter ID*"/>
+            <EditText
+                android:id="@+id/voter_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter voter name*"/>
+            <EditText
+                android:id="@+id/voter_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Enter password*"/>
+            <EditText
+                android:id="@+id/confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Confirm password*"/>
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:text="submit"/>
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/back_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:text="back"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
